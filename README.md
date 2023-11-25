@@ -1,4 +1,15 @@
 # Trello Clone
+작업 공간, 보드, 목록, 카드, 감사 로그/활동 및 구성원 역할을 모두 갖춘 엔드투엔드 풀스택과 트렐로 클론을 만드는 방법을 배웁니다.
+
+### 기술 스펙
+- Tailwind
+- React.js
+- Next.js (14)
+- Prisma
+- MySQL
+
+## Reference
+- [Github & Live Website](https://www.codewithantonio.com/)
 
 ## Environment Setup
 ### next app 생성
@@ -37,6 +48,15 @@ Success! Project initialization completed.
 ```
 
 ## Folders Setup
+- 폴더와 관련한 Route 시스템 설명
+  - folder/page.tsx: /folder 의 page 표시
+  - (folder)/page.tsx: 폴더명이 없는것과 동일
+  - (folder)/layout.tsx: children 으로 ReactNode 를 선언해야 하위 폴더 적용(공통 작업 구현 이점)
+    - (folder)/folder1/page.tsx: /folder1 의 page 표시
+    - (folder)/folder2/page.tsx: /folder2 의 page 표시
+  - api/folder/route.ts: ts 로 파일을 생성
+    - /api/folder 로 route 에 있는 method 로 API 호출
+    
 ## Marketing Page
 ## Authentication
 ## Organizations
