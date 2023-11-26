@@ -58,6 +58,44 @@ Success! Project initialization completed.
     - /api/folder 로 route 에 있는 method 로 API 호출
     
 ## Marketing Page
+- [layout 추가](app/(marketing)/layout.tsx)
+  - navbar, footer 추가
+- [page 작업](app/(marketing)/page.tsx)
+  - layout 안에 들어가는 ReactNode
+  - 컨텐츠 구성
+    - font, ui 구현
+- [Navbar 추가](app/(marketing)/_components/navbar.tsx)
+- [Footer 추가](app/(marketing)/_components/footer.tsx)
+- [Logo 컴포넌트 추가](components/logo.tsx)
+  - svg 이미지 적용
+- next/font/local
+  ```
+  const headingFont = localFont({
+    src: "../public/fonts/font.woff2",
+  });
+
+  사용: cn("some class names", headingFont.className)
+  ```
+- next/font/google
+  ```
+  const textFont = Poppins({
+    subsets: ["latin"],
+    weight: [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900",
+    ],
+  });
+
+  사용: cn("some class names", textFont.className)
+  ```
+
 ## Authentication
 ## Organizations
 ## Sidebar
