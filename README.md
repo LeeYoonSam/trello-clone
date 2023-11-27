@@ -97,6 +97,28 @@ Success! Project initialization completed.
   ```
 
 ## Authentication
+
+### [Site Info 추가](config/site.ts)
+- 메타 데이터에 들어갈 name, description 추가
+
+### [Clerk 설정]
+- 프로젝트 생성
+- [디펜던시 설치](https://clerk.com/docs/quickstarts/nextjs?_gl=1*1mt122c*_gcl_au*MTIxNzc3MzQ0OC4xNjkzNDQyMTU1)
+  - `npm install @clerk/nextjs`
+  - .env 작성
+- `ClerkProvider` 추가
+- `middleware` 추가
+  ```
+  export default authMiddleware({
+    publicRoutes: ["/"]
+  });
+  ```
+  - authMiddleware `publicRoutes` 추가
+- `sign-in/up` 페이지 추가
+  - [sign-in](app/(platform)/(clerk)/sign-in/[[...sign-in]]/page.tsx)
+  - [sign-up](app/(platform)/(clerk)/sign-up/[[...sign-up]]/page.tsx)
+- .env - Sign 관련 URL 추가
+
 ## Organizations
 ## Sidebar
 ## Workspace Settings
