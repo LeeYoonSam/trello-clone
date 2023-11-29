@@ -120,6 +120,15 @@ Success! Project initialization completed.
 - .env - Sign 관련 URL 추가
 
 ## Organizations
+- Clerk 대시보드에서 Organization 활성화
+- app/(platform)/(clerk)/select-org/[[...select-org]]/page.tsx 추가
+- app/(platform)/(dashboard)/organization/[organizationId]/page.tsx 추가
+- app/(platform)/(dashboard)/layout.tsx 추가
+- middleware.ts
+  - afterAuth 추가
+- components/ui/button.tsx
+  - variant primary 생성
+
 ## Sidebar
 ## Workspace Settings
 ## Server Actions
