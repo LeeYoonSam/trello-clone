@@ -130,6 +130,9 @@ Success! Project initialization completed.
   - variant primary 생성
 
 ## Sidebar
+- app/(platform)/(dashboard)/organization/layout.tsx 추가
+  - 사이드바 추가를 위한 상위 레이아웃
+
 ## Workspace Settings
 ## Server Actions
 ## useAction abstraction
