@@ -133,6 +133,20 @@ Success! Project initialization completed.
 - app/(platform)/(dashboard)/organization/layout.tsx 추가
   - 사이드바 추가를 위한 상위 레이아웃
 
+### dependencies
+- npm i usehooks-ts
+  - 타입스크립트로 작성되어 바로 사용할 수 있는 React 후크 라이브러리.
+- npx shadcn-ui@latest add skeleton
+  - 콘텐츠가 로드되는 동안 플레이스홀더를 표시하는 데 사용합니다.
+- npx shadcn-ui@latest add accordion
+  - 콘텐츠의 섹션을 각각 표시하는 세로로 쌓인 대화형 제목 집합입니다.
+- npx shadcn-ui@latest add separator
+  - 콘텐츠를 시각적 또는 의미론적으로 구분합니다.
+- npm i zustand
+  - 단순화된 플럭스 원리를 사용하는 작고 빠르며 확장 가능한 베어본 상태 관리 솔루션
+- npx shadcn-ui@latest add sheet
+  - 대화 상자 구성 요소를 확장하여 화면의 기본 콘텐츠를 보완하는 콘텐츠를 표시합니다.
+
 ## Workspace Settings
 ## Server Actions
 ## useAction abstraction
