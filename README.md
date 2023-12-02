@@ -132,6 +132,10 @@ Success! Project initialization completed.
 ## Sidebar
 - app/(platform)/(dashboard)/organization/layout.tsx 추가
   - 사이드바 추가를 위한 상위 레이아웃
+- app/(platform)/(dashboard)/_components/mobile-sidebar.tsx 추가
+- app/(platform)/(dashboard)/organization/[organizationId]/_components/org-control.tsx 추가
+- app/(platform)/(dashboard)/_components/sidebar.tsx 추가
+- hooks/use-mobile-sidebar.ts 추가
 
 ### dependencies
 - npm i usehooks-ts
@@ -148,7 +152,23 @@ Success! Project initialization completed.
   - 대화 상자 구성 요소를 확장하여 화면의 기본 콘텐츠를 보완하는 콘텐츠를 표시합니다.
 
 ## Workspace Settings
+- app/(platform)/(dashboard)/organization/[organizationId]/settings/page.tsx 추가
+
 ## Server Actions
+- npx prisma init
+- create database - mysql 데터베이스 생성
+- prisma.prisma 모델(테이블) 추가
+- app/(platform)/(dashboard)/organization/[organizationId]/page.tsx 수정
+- app/(platform)/(dashboard)/organization/[organizationId]/board.tsx 추가
+- app/(platform)/(dashboard)/organization/[organizationId]/form.tsx 추가
+- app/(platform)/(dashboard)/organization/[organizationId]/form-input.tsx 추가
+
+### dependencies
+- npm i -D prisma
+- npm i @prisma/client
+- npm i zod
+- npx shadcn-ui@latest add input
+
 ## useAction abstraction
 ## Form Components
 ## Board Popover Form
