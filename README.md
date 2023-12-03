@@ -170,6 +170,16 @@ Success! Project initialization completed.
 - npx shadcn-ui@latest add input
 
 ## useAction abstraction
+- lib/create-safe-action.ts 추가
+  - 서버 액션 관련 정의
+- hooks/use-action.ts 추가
+  - 서버 액션 정의를 사용하는 훅
+- 추상화된 액션을 사용해서 보드 만들기 리팩토링
+  - actions/create-board/index.ts 추가
+  - actions/create-board/schema.ts 추가
+  - actions/create-board/types.ts 추가
+- app/(platform)/(dashboard)/organization/[organizationId]/form.tsx 수정
+
 ## Form Components
 ## Board Popover Form
 ## Board Server Action
