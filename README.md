@@ -181,6 +181,16 @@ Success! Project initialization completed.
 - app/(platform)/(dashboard)/organization/[organizationId]/form.tsx 수정
 
 ## Form Components
+- app/(platform)/(dashboard)/organization/[organizationId]/form.tsx 수정
+  - FormInput, FormSubmit 교체
+- Form 관련 컴포넌트 분리
+  - components/form/form-errors.tsx
+  - components/form/form-input.tsx
+  - components/form/form-submit.tsx
+
+### dependencies
+- npx shadcn-ui@latest add label
+
 ## Board Popover Form
 ## Board Server Action
 ## Board List
