@@ -181,7 +181,26 @@ Success! Project initialization completed.
 - app/(platform)/(dashboard)/organization/[organizationId]/form.tsx 수정
 
 ## Form Components
+
 ## Board Popover Form
+- app/(platform)/(dashboard)/organization/[organizationId] 폴더 파일 정리
+  - form 관련 컴포넌트 제거
+- app/(platform)/(dashboard)/organization/[organizationId]/page.tsx 수정
+- app/(platform)/(dashboard)/organization/[organizationId]/_components/info.tsx 추가
+  - 보드 정보
+- app/(platform)/(dashboard)/organization/[organizationId]/_components/board-list.tsx 추가
+- components/hint.tsx 툴팁 추가
+- components/form/form-popover.tsx 팝오버 추가
+- components/ui/popover.tsx 수정
+  - PopoverClose 추가
+- app/(platform)/layout.tsx 토스트 추가
+
+### dependencies
+- npx shadcn-ui@latest add tooltip
+- npx shadcn-ui@latest add popover
+- npm i sonner
+  - 토스트
+
 ## Board Server Action
 ## Board List
 ## Board Page
