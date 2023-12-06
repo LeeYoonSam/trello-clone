@@ -202,6 +202,23 @@ Success! Project initialization completed.
   - 토스트
 
 ## Board Server Action
+- [unsplash](https://unsplash.com/ko) 앱 생성
+  - 이미지 제공
+- lib/unsplash.ts 추가
+  - unsplash API 를 사용해서 이미지 가져오기
+- components/form/form-picker.tsx 추가
+  - 랜덤 이미지 선택
+- components/form/form-popover.tsx 수정
+  - form-picker 사용
+- next.config.js 수정
+  - 이미지 remotePatterns 추가
+- constants/images.ts 추가
+  - 기본 이미지 추가(오류 발생시 사용할 기본 이미지 추가)
+
+
+### dependencies
+- npm i unsplash-js
+
 ## Board List
 ## Board Page
 ## List Component
