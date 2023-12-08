@@ -3,11 +3,12 @@
 import { useEffect, useState } from "react";
 import { useFormStatus } from "react-dom";
 import Image from "next/image";
-import { Link, Loader2 } from "lucide-react";
+import { Check, Link, Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 import { unsplash } from "@/lib/unsplash"
 import { defaultImages } from "@/constants/images";
+import { FormErrors } from "./form-errors";
 
 interface FormPickerProps {
   id: string;
@@ -49,7 +50,7 @@ export const FormPicker = ({
     fetchImages();
   }, []);
 
-  if (!isLoading) {
+  if (isLoading) {
     return (
       <div className="p-6 flex items-center justify-center">
         <Loader2 className="h-6 w-6 text-sky-700 animate-spin" />
@@ -72,12 +73,26 @@ export const FormPicker = ({
               setSelectedImageId(image.id);
             }}
           >
+            <input
+              type="radio"
+              id={id}
+              name={id}
+              className="hidden"
+              checked={selectedImageId === image.id}
+              disabled={pending}
+              value={`${image.id}|${image.urls.thumb}|${image.urls.full}|${image.links.html}|${image.user.name}`}
+            />
             <Image
               src={image.urls.thumb}
               alt="Unsplash image"
               className="object-cover rounded-sm"
               fill
             />
+            {selectedImageId === image.id && (
+              <div className="absolute inset-y-0 h-full w-full bg-black/30 flex items-center justify-center">
+                <Check className="h-4 w-4 text-white" />
+              </div>
+            )}
             <Link
               href={image.links.html}
               target="_blank"
@@ -88,6 +103,10 @@ export const FormPicker = ({
           </div>
         ))}
       </div>
+      <FormErrors 
+        id="image"
+        errors={errors}
+      />
     </div>
   )
 }

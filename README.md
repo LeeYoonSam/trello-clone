@@ -225,6 +225,12 @@ Success! Project initialization completed.
 - constants/images.ts 추가
   - 기본 이미지 추가(오류 발생시 사용할 기본 이미지 추가)
 
+- prisma/schema.prisma 모델 수정
+  - 모델 수정 후 prisma migrate
+    - npx prisma migrate reset -> yes
+    - npx prisma db push
+    - npx prisma generate
+  
 
 ### dependencies
 - npm i unsplash-js
