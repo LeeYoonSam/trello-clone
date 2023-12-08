@@ -5,6 +5,8 @@ import { useAction } from "@/hooks/use-action";
 import { createBoard } from "@/actions/create-board";
 import { toast } from "sonner";
 import { FormPicker } from "./form-picker";
+import { FormInput } from "./form-input";
+import { FormSubmit } from "./form-submit";
 
 interface FormPopoverProps {
   children: React.ReactNode;
