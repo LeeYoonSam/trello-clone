@@ -244,6 +244,11 @@ Success! Project initialization completed.
 - app/(platform)/(dashboard)/organization/[organizationId]/page.tsx 수정
   - Suspense 추가 및 스켈레톤 UI 적용
 
+### Note
+- `Suspense`: 
+  - 무언가를 기다릴 때 사용합니다. 
+  - **children**이 로딩되기 전에 **fallback**을 보여줄 수 있습니다.
+
 ## Board Page
 ## List Component
 ## List Header
