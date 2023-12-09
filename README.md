@@ -229,6 +229,8 @@ Success! Project initialization completed.
     - npx prisma migrate reset -> yes
     - npx prisma db push
     - npx prisma generate
+- app/(platform)/(dashboard)/_components/navbar.tsx 수정
+  - navbar 에서도 board 를 만들수 있도록 FormPopover 로 버튼 감싸기
 
 ### Note
 - `asChild`: 컴포넌트의 렌더링을 단일 자식 엘리먼트에 위임합니다.
@@ -237,6 +239,11 @@ Success! Project initialization completed.
 - npm i unsplash-js
 
 ## Board List
+- app/(platform)/(dashboard)/organization/[organizationId]/_components/board-list.tsx 수정
+  - BoardList 구현
+- app/(platform)/(dashboard)/organization/[organizationId]/page.tsx 수정
+  - Suspense 추가 및 스켈레톤 UI 적용
+
 ## Board Page
 ## List Component
 ## List Header
