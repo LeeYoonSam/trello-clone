@@ -224,13 +224,14 @@ Success! Project initialization completed.
   - 이미지 remotePatterns 추가
 - constants/images.ts 추가
   - 기본 이미지 추가(오류 발생시 사용할 기본 이미지 추가)
-
 - prisma/schema.prisma 모델 수정
   - 모델 수정 후 prisma migrate
     - npx prisma migrate reset -> yes
     - npx prisma db push
     - npx prisma generate
-  
+
+### Note
+- `asChild`: 컴포넌트의 렌더링을 단일 자식 엘리먼트에 위임합니다.
 
 ### dependencies
 - npm i unsplash-js
