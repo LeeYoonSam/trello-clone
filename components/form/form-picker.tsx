@@ -2,13 +2,14 @@
 
 import { useEffect, useState } from "react";
 import { useFormStatus } from "react-dom";
-import Image from "next/image";
-import { Check, Link, Loader2 } from "lucide-react";
+import { Check, Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 import { unsplash } from "@/lib/unsplash"
 import { defaultImages } from "@/constants/images";
 import { FormErrors } from "./form-errors";
+import Link from "next/link";
 
 interface FormPickerProps {
   id: string;
@@ -35,8 +36,10 @@ export const FormPicker = ({
 
         if (result && result.response) {
           const newImages = (result.response as Array<Record<string, any>>);
+          console.log(`newImage: ${newImages}`)
           setImages(newImages);
         } else {
+          setImages(defaultImages);
           console.error("Failed to get images from Unsaplash")
         } 
       } catch (error) {
