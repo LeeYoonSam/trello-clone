@@ -250,6 +250,26 @@ Success! Project initialization completed.
   - **children**이 로딩되기 전에 **fallback**을 보여줄 수 있습니다.
 
 ## Board Page
+- app/(platform)/(dashboard)/board/[boardId]/page.tsx 추가
+- app/(platform)/(dashboard)/board/[boardId]/layout.tsx 추가
+  - 배경 이미지 추가(화면에 가득찬 이미지 추가)
+    ```
+    <div className="relative h-full bg-no-repeat bg-cover bg-center"
+      style={{backgroundImage: `url(${board.imageFullUrl})`}}
+    >
+    ```
+- app/(platform)/(dashboard)/board/[boardId]/_components/board-navbar.tsx 추가
+- app/(platform)/(dashboard)/board/[boardId]/_components/board-title-form.tsx 추가
+- components/ui/button.tsx 수정
+  - transparent variant 추가
+- components/ui/input.tsx 수정
+  - focus-visible:ring-offset-2 -> focus-visible:ring-offset-0 수정
+
+### dependencies
+- npm i lodash
+  - array, collection, date 등 데이터의 필수적인 구조를 쉽게 다룰 수 있게끔 하는데에 사용
+- npm i -D @types/lodash
+
 ## List Component
 ## List Header
 ## List Options
