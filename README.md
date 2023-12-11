@@ -264,6 +264,15 @@ Success! Project initialization completed.
   - transparent variant 추가
 - components/ui/input.tsx 수정
   - focus-visible:ring-offset-2 -> focus-visible:ring-offset-0 수정
+- actions/delete-board 추가
+  - index.ts
+  - schema.ts
+  - types.s
+- app/(platform)/(dashboard)/board/[boardId]/_components/board-navbar.tsx 수정
+  - 옵션 버튼 추가
+- app/(platform)/(dashboard)/board/[boardId]/_components/board-options.tsx 추가
+  - 옵션 팝오버
+  - 보드 삭제
 
 ### dependencies
 - npm i lodash
