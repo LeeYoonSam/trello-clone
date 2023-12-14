@@ -280,6 +280,14 @@ Success! Project initialization completed.
 - npm i -D @types/lodash
 
 ## List Component
+- prisma/schema.prisma 수정
+  - List, Card 모델 추가
+  - npx prisma migrate reset | npx prisma db push | npx prisma generate
+- List 관련 컴포넌트 추가
+  - app/(platform)/(dashboard)/board/[boardId]/_components/list-container.tsx
+  - app/(platform)/(dashboard)/board/[boardId]/_components/list-form.tsx
+  - app/(platform)/(dashboard)/board/[boardId]/_components/list-wrapper.tsx
+
 ## List Header
 ## List Options
 ## Card Form
