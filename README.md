@@ -287,6 +287,8 @@ Success! Project initialization completed.
   - app/(platform)/(dashboard)/board/[boardId]/_components/list-container.tsx
   - app/(platform)/(dashboard)/board/[boardId]/_components/list-form.tsx
   - app/(platform)/(dashboard)/board/[boardId]/_components/list-wrapper.tsx
+- app/(platform)/(dashboard)/board/[boardId]/_components/list-form.tsx 수정
+  - DB에 리스트 추가
 
 ## List Header
 ## List Options
