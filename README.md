@@ -296,6 +296,8 @@ Success! Project initialization completed.
   - 리스트를 구성하는 개별 아이템 추가
 - app/(platform)/(dashboard)/board/[boardId]/_components/list-header.tsx 추가
   - 리스트 아이템 헤더
+- actions/update-list 리스트 업데이트 액션 추가
+- app/(platform)/(dashboard)/board/[boardId]/_components/list-header.tsx 수정
 
 ## List Options
 ## Card Form
