@@ -291,6 +291,12 @@ Success! Project initialization completed.
   - DB에 리스트 추가
 
 ## List Header
+- app/(platform)/(dashboard)/board/[boardId]/_components/list-container.tsx 수정
+- app/(platform)/(dashboard)/board/[boardId]/_components/list-item.tsx 추가
+  - 리스트를 구성하는 개별 아이템 추가
+- app/(platform)/(dashboard)/board/[boardId]/_components/list-header.tsx 추가
+  - 리스트 아이템 헤더
+
 ## List Options
 ## Card Form
 ## Drag n' Drop
