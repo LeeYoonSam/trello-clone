@@ -300,6 +300,14 @@ Success! Project initialization completed.
 - app/(platform)/(dashboard)/board/[boardId]/_components/list-header.tsx 수정
 
 ## List Options
+- app/(platform)/(dashboard)/board/[boardId]/_components/list-options.tsx 추가
+  - 옵션 컴포넌트 생성
+- Action 추가 
+  - actions/delete-list
+  - actions/copy-list
+- app/(platform)/(dashboard)/board/[boardId]/_components/list-header.tsx 수정
+  - 옵션 컴포넌트 추가
+
 ## Card Form
 ## Drag n' Drop
 ## Card Modal
