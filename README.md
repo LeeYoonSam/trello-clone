@@ -309,6 +309,21 @@ Success! Project initialization completed.
   - 옵션 컴포넌트 추가
 
 ## Card Form
+- app/(platform)/(dashboard)/board/[boardId]/_components/list-header.tsx 수정
+- app/(platform)/(dashboard)/board/[boardId]/_components/list-item.tsx 수정
+  - 카드 컴포넌트 추가
+- app/(platform)/(dashboard)/board/[boardId]/_components/card-form.tsx 추가
+  - 카드 컴포넌트 구현
+- components/form/form-textarea.tsx
+  - textarea form 컴포넌트 구현
+
+### dependencies
+- npx shadcn-ui@latest add textarea
+
+### Note
+- useFormStatus()
+  - 마지막 form 제출의 상태 정보를 제공하는 훅입니다.
+
 ## Drag n' Drop
 ## Card Modal
 ## Card Actions
