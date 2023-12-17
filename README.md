@@ -316,7 +316,15 @@ Success! Project initialization completed.
   - 카드 컴포넌트 구현
 - components/form/form-textarea.tsx
   - textarea form 컴포넌트 구현
-
+- Action 추가
+  - actions/create-card
+- app/(platform)/(dashboard)/board/[boardId]/_components/list-item.tsx 수정
+  - CardItem 추가
+- app/(platform)/(dashboard)/board/[boardId]/_components/card-item.tsx
+  - CardItem 컴포넌트 생성
+- app/(platform)/(dashboard)/board/[boardId]/_components/card-form.tsx 수정
+  - 카드를 추가 할수 있도록 Action 연결
+  
 ### dependencies
 - npx shadcn-ui@latest add textarea
 
