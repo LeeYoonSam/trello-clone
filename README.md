@@ -333,6 +333,18 @@ Success! Project initialization completed.
   - 마지막 form 제출의 상태 정보를 제공하는 훅입니다.
 
 ## Drag n' Drop
+- app/(platform)/(dashboard)/board/[boardId]/_components/list-container.tsx 수정
+  - 컨테이너에 DragDropContext 추가, 리스트를 드래그 하기 위해 ListItem 에 Droppable 컴포넌트 추가
+- app/(platform)/(dashboard)/board/[boardId]/_components/list-item.tsx 수정
+  - 리스트 아이템을 드래그 할 수 있게 Draggable 추가
+  - 리스트 아이템의 카드 드래그 하기 위해 CardItem 영역에 Droppable 컴포넌트 추가
+- app/(platform)/(dashboard)/board/[boardId]/_components/card-item.tsx 수정
+  - CardItem을 드래그 할 수 있게 Draggable 추가
+
+### dependencies
+- npm i @hello-pangea/dnd
+  - React 드래그 앤 드롭
+
 ## Card Modal
 ## Card Actions
 ## Activity / Audit Logs
