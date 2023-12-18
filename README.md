@@ -340,6 +340,8 @@ Success! Project initialization completed.
   - 리스트 아이템의 카드 드래그 하기 위해 CardItem 영역에 Droppable 컴포넌트 추가
 - app/(platform)/(dashboard)/board/[boardId]/_components/card-item.tsx 수정
   - CardItem을 드래그 할 수 있게 Draggable 추가
+- app/(platform)/(dashboard)/board/[boardId]/_components/list-container.tsx 수정
+  - onDragEnd 구현으로 리스트 이동, 카드 이동, 카드를 다른 리스트로 이동등의 드래그앤드롭 기능 추가
 
 ### dependencies
 - npm i @hello-pangea/dnd
