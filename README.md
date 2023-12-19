@@ -342,6 +342,13 @@ Success! Project initialization completed.
   - CardItem을 드래그 할 수 있게 Draggable 추가
 - app/(platform)/(dashboard)/board/[boardId]/_components/list-container.tsx 수정
   - onDragEnd 구현으로 리스트 이동, 카드 이동, 카드를 다른 리스트로 이동등의 드래그앤드롭 기능 추가
+- Actions 추가
+  - actions/update-list-order
+    - 리스트의 이동 시 데이터 저장
+  - actions/update-card-order
+    - 카드의 이동 시 데이터 저장
+  - app/(platform)/(dashboard)/board/[boardId]/_components/list-container.tsx 수정
+    - execute 실행 및 드래그로 순서 변경
 
 ### dependencies
 - npm i @hello-pangea/dnd
