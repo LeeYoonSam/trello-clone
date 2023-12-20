@@ -381,6 +381,10 @@ Success! Project initialization completed.
 - components/modals/header.tsx 생성
   - 카드모달 헤더 구성
   - 스켈레톤 생성
+- actions/update-card 생성
+  - 카드 타이틀 업데이트를 위한 action
+- components/modals/header.tsx 수정
+  - 헤더에 카드 타이틀 업데이트 액션 연동
 
 ### dependencies
 - npx shadcn-ui@latest add dialog
