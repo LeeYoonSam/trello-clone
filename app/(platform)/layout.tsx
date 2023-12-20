@@ -1,5 +1,6 @@
-import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "sonner";
+import { ClerkProvider } from "@clerk/nextjs";
+import { ModalProvider } from "@/components/providers/modal-provider";
 
 const PlatformLayout = ({
   children
@@ -10,6 +11,7 @@ const PlatformLayout = ({
     <ClerkProvider>
       <Toaster />
       {children}
+      <ModalProvider />
     </ClerkProvider>
   );
 };

@@ -355,6 +355,21 @@ Success! Project initialization completed.
   - React 드래그 앤 드롭
 
 ## Card Modal
+- hooks/use-card-modal.ts 생성
+  - card modal 커스텀 훅 생성
+- components/modals/card-modal/index.tsx 생성
+  - 공통으로 사용 할 CardModal 컴포넌트 추가
+  - use-card-modal 커스텀 훅을 사용해서 모달 구성
+- components/providers/modal-provider.tsx 생성
+  - CardModal 을 감싸고 있는 컴포넌트
+- app/(platform)/layout.tsx 수정
+  - 하위 페이지에서 공통으로 모달을 사용 할 수 있게 상위 layout 에 ModalProvider 컴포넌트를 추가
+- app/(platform)/(dashboard)/board/[boardId]/_components/card-item.tsx 수정
+  - useCardModal 을 사용해서 카드 클릭시 모달이 뜨도록 변경
+
+### dependencies
+npx shadcn-ui@latest add dialog
+
 ## Card Actions
 ## Activity / Audit Logs
 ## Stripe & Board Limits
