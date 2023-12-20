@@ -129,6 +129,9 @@ export const ListContainer = ({
         // Remove card from the source list
         const [movedCard] = sourceList.cards.splice(source.index, 1);
 
+        // Assign the new listId to the moved card
+        movedCard.listId = destination.droppableId;
+
         // Add card to the destination list
         destList.cards.splice(destination.index, 0, movedCard);
 

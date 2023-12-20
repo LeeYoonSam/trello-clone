@@ -391,6 +391,9 @@ Success! Project initialization completed.
 - npm i @tanstack/react-query
   - TS/JS, React, Solid, Vue 및 Svelte를 위한 강력한 비동기 상태 관리
 
+### Note
+- Array.splice(start, deleteCount) : 엘리먼트를 배열에서 삭제하거나 그 자리에 새로운 엘리먼트 삽입, 반환값은 삭제된 엘리먼트
+
 ## Card Actions
 ## Activity / Audit Logs
 ## Stripe & Board Limits
