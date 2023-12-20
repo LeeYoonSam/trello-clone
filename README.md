@@ -372,6 +372,15 @@ Success! Project initialization completed.
   - react-query 를 사용하기 위한 프로바이더
 - app/(platform)/layout.tsx 수정
   - QueryProvider 를 추가
+- app/api/cards/[cardId]/route.ts 생성
+  - 카드 타이틀 조회용 Get API 추가
+- lib/fetchers.ts 생성
+  - url 을 전달해서 응답을 받아오는 lib 추가
+- components/modals/card-modal/index.tsx 수정
+  - API 로 타이틀 가져와서 표시
+- components/modals/header.tsx 생성
+  - 카드모달 헤더 구성
+  - 스켈레톤 생성
 
 ### dependencies
 - npx shadcn-ui@latest add dialog
