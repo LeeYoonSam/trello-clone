@@ -366,9 +366,17 @@ Success! Project initialization completed.
   - 하위 페이지에서 공통으로 모달을 사용 할 수 있게 상위 layout 에 ModalProvider 컴포넌트를 추가
 - app/(platform)/(dashboard)/board/[boardId]/_components/card-item.tsx 수정
   - useCardModal 을 사용해서 카드 클릭시 모달이 뜨도록 변경
+- components/ui/dialog.tsx 수정
+  - DialogOverlay(다이얼로그 박스 바깥 배경 영역) 색상 변경
+- components/providers/query-provider.tsx 생성
+  - react-query 를 사용하기 위한 프로바이더
+- app/(platform)/layout.tsx 수정
+  - QueryProvider 를 추가
 
 ### dependencies
-npx shadcn-ui@latest add dialog
+- npx shadcn-ui@latest add dialog
+- npm i @tanstack/react-query
+  - TS/JS, React, Solid, Vue 및 Svelte를 위한 강력한 비동기 상태 관리
 
 ## Card Actions
 ## Activity / Audit Logs
