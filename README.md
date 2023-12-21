@@ -395,6 +395,23 @@ Success! Project initialization completed.
 - Array.splice(start, deleteCount) : 엘리먼트를 배열에서 삭제하거나 그 자리에 새로운 엘리먼트 삽입, 반환값은 삭제된 엘리먼트
 
 ## Card Actions
+- components/modals/card-modal/description.tsx 생성
+  - textarea 추가
+- components/modals/card-modal/actions.tsx 생성
+  - copy, delete 액션 추가
+- components/modals/card-modal/index.tsx 수정
+  - Description 추가
+  - Actions 추가
+- actions/update-card/schema.ts 수정
+  - schema title 옵셔널로 수정
+- components/ui/button.tsx 수정
+  - variant - gray 추가
+  - size - inline 추가
+- actions/copy-card 생성
+  - 카드 복사 기능
+- actions/delete-card 생성
+  - 카드 삭제 기능
+
 ## Activity / Audit Logs
 ## Stripe & Board Limits
 ## 30 Deployment

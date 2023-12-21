@@ -4,7 +4,7 @@ import { ElementRef, useRef, useState } from "react";
 import { Layout } from "lucide-react";
 import { CardWithList } from "@/types";
 import { FormInput } from "@/components/form/form-input";
-import { Skeleton } from "../ui/skeleton";
+import { Skeleton } from "../../ui/skeleton";
 import { useQueryClient } from "@tanstack/react-query";
 import { useParams } from "next/navigation";
 import { useAction } from "@/hooks/use-action";
