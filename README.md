@@ -413,5 +413,28 @@ Success! Project initialization completed.
   - 카드 삭제 기능
 
 ## Activity / Audit Logs
+- components/ui/dialog.tsx 수정
+  - DialogContent - max-w-3xl 로 최대 넓이 수정
+- prisma/schema.prisma 수정
+  - AuditLog 모델 추가
+  - npx prisma db push
+  - npx prisma generate
+- lib/create-audit-log.ts 생성
+  - 로그 생성 lib 추가
+- app/api/cards/[cardId]/logs/route.ts 생성
+  - 로그 정보 API 추가
+- actions/create-card/index.ts 수정
+  - 카드 생성시 로그도 생성하도록 추가
+- components/modals/card-modal/activity.tsx 생성
+  - 카드 다이얼로그 내 Activity 컴포넌트 추가
+- lib/generate-log-message.ts 생성
+  - 로그정보를 기반으로 공통으로 데이터 format 을 적용
+- components/activity-item.tsx 생성
+  - activity 정보 표시를 위한 컴포넌트 추가
+
+### dependencies
+- npx shadcn-ui@latest add avatar
+- npm i date-fns
+
 ## Stripe & Board Limits
 ## 30 Deployment
