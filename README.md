@@ -431,6 +431,17 @@ Success! Project initialization completed.
   - 로그정보를 기반으로 공통으로 데이터 format 을 적용
 - components/activity-item.tsx 생성
   - activity 정보 표시를 위한 컴포넌트 추가
+- actions 수정 
+  - board, list, card
+  - copy, delete, update 에 AuditLog 추가
+- components/modals/card-modal/description.tsx 수정
+  - 로그 추가
+- components/modals/card-modal/header.tsx 수정
+  - 로그 추가
+- app/(platform)/(dashboard)/organization/[organizationId]/activity/page.tsx 생성
+  - Activity 페이지 생성
+- app/(platform)/(dashboard)/organization/[organizationId]/activity/_components/activity-list.tsx 생성
+  - Activity 리스트 컴포넌트 생성
 
 ### dependencies
 - npx shadcn-ui@latest add avatar
