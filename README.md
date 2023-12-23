@@ -448,4 +448,18 @@ Success! Project initialization completed.
 - npm i date-fns
 
 ## Stripe & Board Limits
-## 30 Deployment
+- prisma/schema.prisma 수정
+  - OrgLimit model 추가
+- constants/boards.ts 생성
+  - 무료 보드 갯수 상수 추가
+- lib/org-limit.ts 생성
+  - org 관련 정보를 db 에서 가져오는 작업
+- app/(platform)/(dashboard)/organization/[organizationId]/_components/board-list.tsx 수정
+  - 무료 보드 남은갯수 표시
+- actions/create-board/index.ts 수정
+  - 보드 생성시 limit 증가
+  - limit 초과시 에러
+- actions/delete-board/index.ts 수정
+  - 보드 삭제시 limit 감소
+
+## Deployment
