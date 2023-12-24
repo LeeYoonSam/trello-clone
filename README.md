@@ -461,5 +461,33 @@ Success! Project initialization completed.
   - limit 초과시 에러
 - actions/delete-board/index.ts 수정
   - 보드 삭제시 limit 감소
+- lib/stripe.ts 생성
+  - stripe 사용 설정
+- lib/subscription.ts 생성
+  - 구독 정보
+- .env 수정
+  - stripe secret key 추가
+  - 기본 도메인 추가
+- components/modals/pro-modal.tsx 생성
+  - pro 모달 생성
+- hooks/use-pro-modal.ts 생성
+  - pro 모달 hook 생성
+- components/providers/modal-provider.tsx 수정
+  - pro 모달 추가
+- lib/utils.ts 수정
+  - 절대 주소 + path 함수 추가
+- components/form/form-popover.tsx 수정
+  - 보드 생성 팝오버에 ProModal 추가
+- actions/stripe-redirect 생성
+  - stripe 결제 정보 생성
+
+### dependencies
+- npm i stripe
+
+### Note
+**Stripe**
+- Stripe Project Account 생성
+- Developer 탭 진입
+- API Keys 정보 입력
 
 ## Deployment
