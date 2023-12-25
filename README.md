@@ -480,6 +480,28 @@ Success! Project initialization completed.
   - 보드 생성 팝오버에 ProModal 추가
 - actions/stripe-redirect 생성
   - stripe 결제 정보 생성
+- Stripe CLI Webhook 연결
+  - stripe login
+  - stripe listen --forward-to localhost:3000/api/webhook
+  - secret 복사
+  - `.env`: STRIPE_WEBHOOK_SECRET 에 scret 붙여넣기
+  - middleware.ts 수정
+    - `publicRoutes: ["/", "/api/webhook"]` webhook 추가
+- app/(platform)/(dashboard)/organization/[organizationId]/_components/board-list.tsx 수정
+  - 프로 버전 체크 및 Unlimited 적용
+- actions/create-board/index.ts 수정
+  - 프로 버전 체크
+- app/(platform)/(dashboard)/organization/[organizationId]/_components/info.tsx 수정
+  - Pro | Free 정보 받아서 표시
+- Pro | Free 정보 표시
+  - app/(platform)/(dashboard)/organization/[organizationId]/page.tsx
+  - app/(platform)/(dashboard)/organization/[organizationId]/activity/page.tsx
+- app/(platform)/(dashboard)/organization/[organizationId]/billing/page.tsx 생성
+  - Billing 페이지 추가
+- app/(platform)/(dashboard)/organization/[organizationId]/billing/_components/subscription-button.tsx 생성
+  - Billing 페이지 구독/구독 관리 버튼 추가
+- Stripe > Customer portal 테스트 링크 활성화
+  - Active test link
 
 ### dependencies
 - npm i stripe
@@ -491,3 +513,6 @@ Success! Project initialization completed.
 - API Keys 정보 입력
 
 ## Deployment
+- package.json 수정
+  - postinstall - prisma generate 추가
+- vercel 배포
